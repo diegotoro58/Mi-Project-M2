@@ -1,0 +1,81 @@
+####
+POST http://localhost:9000/api/beaches HTTP/1.1
+Content-Type: application/json
+ {
+    "playa": "baía do Sancho",
+    "pais": "brasil",
+    "ciudad": "fernando de noronha",
+    "hoteles": [
+      {
+        "nombre": "pousada portal dos golfinhos",
+        "estrellas": 4.3
+      },
+      {
+        "nombre": "pousada canto do boldro",
+        "estrellas": 4.9
+      }
+    ]
+  }
+
+####
+
+GET http://localhost:9000/api/beaches HTTP/1.1
+
+#############################################
+
+
+
+####
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Juan",
+    "lastname": "Mendez",
+    "age": "78",
+    "email": "juan.mz@gmail.com"
+}
+
+#####
+POST http://localhost:9000/api/usersMany HTTP/1.1
+Content-Type: application/json
+
+[
+    {
+        "name":"Pepito",
+        "lastname": "Perez",
+        "age": 78
+    },
+    {
+        "name":"Pepita",
+        "lastname": "Lozano",
+        "age": 78
+    },
+    {
+        "name":"Juan",
+        "lastname": "Aries",
+        "age": 78
+    }
+]
+
+####
+
+GET http://localhost:9000/api/users HTTP/1.1
+
+####
+GET http://localhost:9000/api/users/64e00b1bb506147b256d0bd9 HTTP/1.1
+
+####
+
+PUT http://localhost:9000/api/users/64e00b1bb506147b256d0bd9 HTTP/1.1
+Content-Type: application/json
+
+    {
+        "name":"Francisco",
+        "lastname": "Arboleda",
+        "age": 34
+    }
+
+
+######
+DELETE http://localhost:9000/api/users/64dfee41f9c727d730182cdf HTTP/1.1
