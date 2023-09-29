@@ -1,0 +1,13 @@
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Kalam', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Pacifico', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'EB Garamond', serif;
+font-family: 'Shadows Into Light', cursive; */
+.list-group{
+    font-family: 'Kalam', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}

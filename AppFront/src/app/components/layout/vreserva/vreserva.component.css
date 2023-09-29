@@ -1,0 +1,31 @@
+/* Estilo para la sección container-fluid */
+.container-fluid {
+    margin-top: 50px;
+    margin-bottom: 200px;
+    background-color: #f6a535; /* Color de fondo */
+    padding: 40px; /* Espaciado interno */
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+  #li1{
+    font-family: 'Kalam', cursive;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    display: block;
+    
+  }
+  
+  /* Estilo para la lista desordenada (ul) dentro de la sección */
+  .container-fluid ul {
+    list-style-type: none; /* Elimina los puntos de lista predeterminados */
+    padding: 0; /* Elimina el espacio interno predeterminado de la lista */
+    
+  }
+  
+  
+  
+  

@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <form [formGroup]="formulario" class="formulario" (ngSubmit)="onSubmit()">
+                <section class="mb-3">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" formControlName="name">
+                </section>
+                <section class="mb-3">
+                    <label>Apellido</label>
+                    <input type="text" class="form-control" formControlName="lastname">
+                </section>
+                <section class="mb-3">
+                    <label>Edad</label>
+                    <input type="number" class="form-control" formControlName="age">
+                </section>
+                <section class="mb-3">
+                    <label>Correo</label>
+                    <input type="email" class="form-control" formControlName="email">
+                </section>
+                <section class="mb-3">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" formControlName="password">
+                </section>
+                <input type="submit" value="Enviar" class="btn btn-info">
+            </form>
+        </div>
+        <div class="col-md-6 col-12">
+            <section class=" container-fluid-flex  p-3">
+                <img src="../../../../assets/source/portada/puesta1.jpeg" class="flex-shrink- me-3" alt="...">
+                <article>
+                    <h5 class="mt-5">QUE ESPERAS?<br> HAY UN MUNDO ALLÁ AFUERA!</h5>
+                    <p class="linea1">«La gente no hace viajes, son los viajes los que hacen a la gente». John Steinbeck
+                        <br>
+                        «Viajar es fatal para los prejuicios, la intolerancia y la estrechez de miras». Mark Twain.</p>
+                    <button [routerLink]="['/beaches']" class="btn btn-info" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">TOP 25 De las Mejores Playas Del
+                        Mundo</button>
+                </article>
+            </section>
+        </div>
+    </div>
+</div>

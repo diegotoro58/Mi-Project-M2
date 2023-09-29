@@ -1,0 +1,45 @@
+
+#frase1 {
+    color: rgb(102, 53, 53);
+    text-align: end;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+
+.card-img {
+    width: 50%;
+}
+
+
+.card-title {
+    font-size: 35px;
+    text-align: center;
+    color:  rgb(185, 84, 12);
+    font-family: 'Comforta', cursive;
+}
+#titulo1{
+    font-size: 55px;
+    text-align: end;
+    color: rgb(15, 6, 79);
+    font-family: 'Pacifico', cursive;
+}
+
+.card {
+    
+    display: inline-table;
+    margin-bottom: 5%;
+}
+.card-text{
+    font-family: 'Kalam', cursive; 
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+.btnmal{
+    background-color: rgb(19, 48, 121);
+    color: azure;
+    border-radius: 12px;
+    margin-bottom: 3px;
+}

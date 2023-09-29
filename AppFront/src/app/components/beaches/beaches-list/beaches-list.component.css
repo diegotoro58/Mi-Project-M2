@@ -1,0 +1,18 @@
+  /* Estilos para la lista <ol> */
+  ol {
+    background-color: rgb(250, 255, 253);
+    list-style-type: decimal; /* Tipo de numeración (puedes personalizarlo) */
+    font-size: 16px; /* Tamaño de fuente para la lista */
+    color: #0b041a; /* Color del texto de la lista */
+  }
+
+  /* Estilos para los elementos <li> */
+  .lista {
+    margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    font-weight: bold; /* Texto en negrita */
+  }
+
+  .lista b {
+    font-weight: bold; /* Texto en negrita */
+    color: #00abfb; /* Color para el elemento <b> */
+  }

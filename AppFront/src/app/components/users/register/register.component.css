@@ -1,0 +1,33 @@
+.form-control {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.formulario {
+  margin-bottom: 150px;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f6a535;
+  font-family: 'Kalam', cursive;
+}
+.container{
+ display: flex;
+
+}
+.linea1{
+  font-family: 'Kalam', cursive ;
+  font-size: 20px;
+  color: black;
+  font-style: bold;
+  font-weight: bold;
+  display: block;
+  }
+  .mt-5{
+      color: rgb(199, 91, 13);
+      font-size:40px ;
+  }

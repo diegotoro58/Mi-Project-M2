@@ -17,7 +17,7 @@ router.post('/beaches', (require, response) => {
 //Voy a crear mi arreglo de playas
 router.post('/beachesMany', (require, response) => {
     const beachesData = require.body;
-    beachSchema.insertMany(usersData)
+    beachSchema.insertMany(beachesData)
     .then((data) => response.json(data))
     .catch((error)=> response.json({ message: error }))
 });
