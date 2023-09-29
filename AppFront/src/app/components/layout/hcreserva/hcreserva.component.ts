@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ReservasService } from 'src/app/service/reservas.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hcreserva',
@@ -13,6 +14,7 @@ export class HcreservaComponent {
   formulario: FormGroup;
 
   reservaService = inject(ReservasService)
+  router = inject(Router);
 
   constructor() {
     this.formulario = new FormGroup({
@@ -35,7 +37,10 @@ export class HcreservaComponent {
 
   async onSubmit() {
     const res = await this.reservaService.reservar(this.formulario.value);
-    console.log(res)
+    console.log(res);
+    if(!res.error){
+      this.router.navigate(['/home'])
+    }
   }
 
 }
