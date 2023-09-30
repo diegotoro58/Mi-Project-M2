@@ -15,7 +15,12 @@ export class VreservaComponent {
 
   async ngOnInit() {
     const reserva = await this.reservasService.getAll();
-    this.arrReservas.set(reserva)
+    reserva.subscribe(
+      (response) => {
+        console.log(response)
+        this.arrReservas.set(response)
+      }
+    )
   }
 
 }

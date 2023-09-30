@@ -11,3 +11,15 @@ font-family: 'Shadows Into Light', cursive; */
     font-weight: bold;
     display: block;
 }
+/* Estilos generales para laptop/desktop */
+.card {
+    width: 40rem;
+    margin:0 0 auto left;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media screen and (max-width: 508px) {
+    .card {
+        width: 100%;
+    }
+}

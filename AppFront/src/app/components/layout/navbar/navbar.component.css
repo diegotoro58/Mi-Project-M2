@@ -1,0 +1,13 @@
+/* Estilos generales para laptops/desktops */
+.navbar-brand {
+    font-size: 24px;
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    /* Agrega más estilos específicos para dispositivos móviles aquí */
+}

@@ -1,5 +1,5 @@
 import { Injectable, inject } from '@angular/core';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 @Injectable({
@@ -11,12 +11,8 @@ export class ReservasService {
   baseUrl = 'http://localhost:9000/api/reservas';
 
 
-  getAll() {
-    return firstValueFrom(
-      this.httpClient.get<any[]>(this.baseUrl, this.
-        createHeaders())
-    );
-
+  getAll(): Observable<any[]> {
+    return this.httpClient.get<any[]>(this.baseUrl, this.createHeaders());
   }
 
   createHeaders() {
@@ -33,7 +29,5 @@ export class ReservasService {
   }
 }
 
-
-// constructor() { }
 
 

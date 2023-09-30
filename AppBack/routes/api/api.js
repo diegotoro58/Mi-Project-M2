@@ -10,7 +10,7 @@ const router = express.Router();
 
 router.use('', userRoutes);
 router.use('', beachRoutes);
-router.use('', reservaRoutes);
+router.use('', checkToken, reservaRoutes);
 router.use('', checkToken, mostrarReservas);
 
 

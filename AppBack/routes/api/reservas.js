@@ -16,9 +16,12 @@ const router = express.Router();
 
 router.post('/reservas', (req, res) => {
     const { nombrecompleto, email, telnumero, ciudad, cpostal, pais, detallesviaje, destino, fechai, fechaf, numeroadultos, numeronino, tipohabit } = req.body;
+    let creadoPor = req.user.user_id;
+    console.log(creadoPor)
 
     // Crea una instancia del modelo seguimiento con los datos proporcionados
     const newReserva = new reservaSchema({
+        creadoPor,
         nombrecompleto,
         email,
         telnumero,
@@ -31,8 +34,7 @@ router.post('/reservas', (req, res) => {
         fechaf,
         numeroadultos,
         numeronino,
-        tipohabit
-
+        tipohabit,
     });
 
     // Guarda el nuevo registro en la base de datos
