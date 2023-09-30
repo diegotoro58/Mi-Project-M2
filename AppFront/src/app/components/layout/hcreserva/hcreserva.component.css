@@ -1,11 +1,10 @@
-
-
-/* Estilo general para el formulario */
-.container{
-  align-items: center;
+.container-fluid {
+    display: flex; /* Usa display flex para alinear elementos en fila (uno al lado del otro) */
+     /* Centra horizontalmente los elementos */
+    padding: 0; 
 }
 .formulario {
-  float: right; /* El formulario flotará a la izquierda */
+  /* El formulario flotará a la izquierda */
   width: 40%;
   max-width: 400px;
   margin: 0 80px 0 80px;
@@ -16,10 +15,6 @@
   font-family: Arial, sans-serif;
 }
 
-/* Estilo para las secciones del formulario */
-section {
-  margin-bottom: 15px;
-}
 
 /* Estilo para las etiquetas de los campos */
 label {
@@ -57,8 +52,14 @@ label {
 .mb-3{
   font-family: 'Kalam', cursive;
 }
-.img {
-  float: left;
-  width: 50%;
-  height: 900px;
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column; /* Cambia la dirección de flex a columna (uno debajo del otro) en pantallas pequeñas */
+    align-items: center; /* Centra horizontalmente los elementos en pantallas pequeñas */
+}
+
+.formulario-container, .img-container {
+    max-width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin: 0; /* Elimina los márgenes entre elementos en pantallas pequeñas */
+}
 }

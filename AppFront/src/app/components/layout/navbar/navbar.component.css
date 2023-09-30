@@ -5,9 +5,13 @@
 
 /* Estilos para dispositivos móviles (ancho máximo de 768px) */
 @media screen and (max-width: 768px) {
-    .navbar-brand {
-        font-size: 20px;
+    .navbar {
+        font-size: 10px;
+        width: 100%;
     }
-
+    #menu {
+        width: 100%;
+    }
+    
     /* Agrega más estilos específicos para dispositivos móviles aquí */
 }

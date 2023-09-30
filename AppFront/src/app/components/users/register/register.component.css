@@ -6,6 +6,7 @@
   font-size: 12px;
   margin-top: 3px;
 }
+
 .formulario {
   margin-bottom: 150px;
   max-width: 400px;
@@ -15,19 +16,71 @@
   background-color: #f6a535;
   font-family: 'Kalam', cursive;
 }
-.container{
- display: flex;
+
+.container {
+  margin-left: 10%;
+  display: flex;
+  /* Usa display flex para alinear elementos en fila (uno al lado del otro) */
+  align-items: center;
+  /* Centra horizontalmente los elementos */
+  padding: 0;
 
 }
-.linea1{
-  font-family: 'Kalam', cursive ;
+
+.linea1 {
+  font-family: 'Kalam', cursive;
   font-size: 20px;
   color: black;
   font-style: bold;
   font-weight: bold;
   display: block;
+}
+
+.mt-5 {
+  color: rgb(199, 91, 13);
+  font-size: 40px;
+}
+
+/* Estilos generales para el contenedor */
+.container {
+  padding: 20px;
+  /* Agrega un espacio alrededor del contenido */
+}
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
+@media screen and (max-width: 768px) {
+
+  /* Ajusta el ancho de las columnas en dispositivos móviles */
+  .col-md-6 {
+    width: 100%;
+  }
+  .container1 {
+    margin-left: 0;
+    width: 100%;
+  }
+  /* Centra la imagen en dispositivos móviles */
+  img.img-fluid {
+    margin-left: 0;
+    width: 100%;
   }
   .mt-5{
-      color: rgb(199, 91, 13);
-      font-size:40px ;
+    color: rgb(199, 91, 13);
+    font-size: 16px;
+    margin-left: 0;
+    width: 100%;
   }
+  /* Ajusta el margen superior del título en dispositivos móviles */
+  h5.mt-3 {
+    margin-left: 0;
+    width: 100%;
+  }
+  .flex-shrink {
+    margin-left: 0;
+    width: 100%;
+  }
+  /* Ajusta el tamaño del texto en dispositivos móviles */
+  p.linea1 {
+    font-size: 14px;
+    width: 100%;
+  }
+}

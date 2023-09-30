@@ -562,6 +562,7 @@ Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjUxNGNkYmVk
 ######
 POST http://localhost:9000/api/reservas HTTP/1.1
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjUxNGNkYmVkYzQ4NGE1OThjMjRlOWY5IiwidXNlcl9yb2xlIjoicmVndWxhciIsImlhdCI6MTY5NTk0NTI3MH0.nM_7bVBLN0Nr078udu-MwmofSnjgfIAAup4jm6EL1x0
 
 {
   "nombrecompleto": "Jaimito cartero ",
