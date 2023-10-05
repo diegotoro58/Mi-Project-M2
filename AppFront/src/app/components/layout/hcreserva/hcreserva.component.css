@@ -55,11 +55,21 @@ label {
 @media screen and (max-width: 768px) {
   .container-fluid {
     flex-direction: column; /* Cambia la dirección de flex a columna (uno debajo del otro) en pantallas pequeñas */
-    align-items: center; /* Centra horizontalmente los elementos en pantallas pequeñas */
+    align-items:center; /* Centra horizontalmente los elementos en pantallas pequeñas */
+    max-width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+    margin: 0;
 }
 
-.formulario-container, .img-container {
-    max-width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+#formulario {
+    width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
     margin: 0; /* Elimina los márgenes entre elementos en pantallas pequeñas */
+}
+.form-control {
+  max-width: 100%; /* El formulario y la imagen ocuparán el 100% del ancho en pantallas pequeñas */
+  margin: 0;
+}
+.img {
+    margin-left: 0;
+    width: 100%;
 }
 }
