@@ -25,7 +25,7 @@ export class ReservasService {
   }
 
   reservar(formValue:any){
-    return firstValueFrom(this.httpClient.post<any>(`${this.baseUrl}`, formValue))
+    return firstValueFrom(this.httpClient.post<any>(`${this.baseUrl}`, formValue, this.createHeaders()))
   }
 }
 
