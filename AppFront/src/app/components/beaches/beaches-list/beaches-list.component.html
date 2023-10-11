@@ -1,6 +1,6 @@
 
 <ol>
-    <li class="lista" *ngFor="let beach of arrBeaches()">
+    <li class="lista" *ngFor="let beach of arrBeaches" (click)="selectBeach(beach)">
         {{ beach.playa }}-<b>{{ beach.pais }}</b>
         
     </li>

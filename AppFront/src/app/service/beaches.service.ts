@@ -1,5 +1,5 @@
-import { Injectable, inject } from '@angular/core';
-import { firstValueFrom } from 'rxjs';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -7,14 +7,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BeachesService {
 
-  httpClient = inject(HttpClient);
-  baseUrl = 'http://localhost:9000/api/beaches'
+  constructor(private httpClient: HttpClient) { }
 
- getAll(){
-  return firstValueFrom(
-    this.httpClient.get<any[]>(this.baseUrl));
-
- }
-   
- // constructor() { }
+  getAll(): Observable<any[]> {
+    return this.httpClient.get<any[]>('http://localhost:9000/api/beaches');
+  }
 }
